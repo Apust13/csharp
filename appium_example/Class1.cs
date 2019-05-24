@@ -24,7 +24,7 @@ namespace AppiumExample
         public void test()
         {
             driver.Url = "https://www.google.com/";
-            driver.FindElement(XPathLookupException)
+           // driver.FindElement(XPathLookupException);
         }
 
 
