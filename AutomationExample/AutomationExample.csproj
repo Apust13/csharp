@@ -9,8 +9,8 @@
     <ProjectGuid>{B911D2DF-87AE-4CA6-8138-1CCACD5E145C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>appium_example</RootNamespace>
-    <AssemblyName>appium_example</AssemblyName>
+    <RootNamespace>AutomationExample</RootNamespace>
+    <AssemblyName>AutomationExample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>

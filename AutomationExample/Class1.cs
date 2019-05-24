@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace AppiumExample
+namespace AutomationExample
 {
     public class Class1
     {
@@ -19,7 +19,7 @@ namespace AppiumExample
         public void test()
         {
             driver.Url = "https://www.google.com/";
-           // driver.FindElement(XPathLookupException);
+           
         }
 
 
