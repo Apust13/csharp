@@ -12,14 +12,22 @@ namespace AutomationExample
         [SetUp]
         public void InitDriver()
         {
-            driver = new ChromeDriver("D:\\Work\\SharpProject\\Tools");
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://www.google.com/");
         }
 
         [Test]
         public void test()
         {
-            driver.Url = "https://www.google.com/";
-           
+      
+            var element = driver.FindElement(By.Name("q"));
+
+            element.SendKeys("Selenium C# examples");
+
+            var button = driver.FindElement(By.XPath(".//input[@type='submit' and contains(@value, 'Google')]"));
+
+            button.Click();
+
         }
 
 
