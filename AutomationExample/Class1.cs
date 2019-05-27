@@ -24,7 +24,7 @@ namespace AutomationExample
 
             element.SendKeys("Selenium C# examples");
 
-            var button = driver.FindElement(By.XPath(".//input[@type='submit' and contains(@value, 'Google')]"));
+            var button = driver.FindElements(By.XPath(".//input[@type='submit' and contains(@value, 'Google')]"))[1];
 
             button.Click();
 
