@@ -16,16 +16,25 @@ namespace AutomationExample
             driver.Navigate().GoToUrl("https://www.google.com/");
         }
 
+
         [Test]
         public void test()
-        {
-      
+        {      
             var element = driver.FindElement(By.Name("q"));
-
             element.SendKeys("Selenium C# examples");
-
             var button = driver.FindElements(By.XPath(".//input[@type='submit' and contains(@value, 'Google')]"))[1];
+           // button.Click();
+            button.Click();
 
+        }
+
+        [Test]
+        public void test2()
+        {
+            var element = driver.FindElement(By.Name("q"));
+            element.SendKeys("Selenium Java");
+            var button = driver.FindElements(By.XPath(".//input[@type='submit' and contains(@value, 'Google')]"))[1];
+           
             button.Click();
 
         }
